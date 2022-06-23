@@ -1,0 +1,133 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Color Palette */
+:root{
+    --lightestBlue: #F1FAEE;
+    --lightBlue: #A8DADC;
+    --normalBlue: #457B9D;
+    --darkBlue: #1D3557;
+}
+
+
+body {
+    background-color: var(--lightestBlue);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Chivo', sans-serif;
+}
+
+button {
+    border-radius: 0.25rem;
+    border: none;
+    font-size: 3rem;
+    font-weight: 900;
+    background-color: var(--darkBlue);
+    color: var(--lightestBlue);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: var(--normalBlue);
+    border: var(--lightestBlue) solid 2px;
+}
+
+button:active {
+    transform: scale(0.96);
+    transition: 0.1s;
+}
+
+.container{
+    background-color: var(--lightBlue);
+    height: 750px;
+    width: 550px;
+    border-radius: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-shadow: 0px 10px 30px 11px rgba(69,123,157,0.44); 
+    box-shadow: 0px 10px 30px 11px rgba(69,123,157,0.44);
+}
+
+.outputCard{
+    background-color: var(--lightestBlue);
+    height: 120px;
+    width: 95%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.outputCard h1 {
+    color: var(--darkBlue);
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.inputCard{
+    height: 100%;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.numbers{
+    width: 70%;
+    display: grid;
+    margin: 2px;
+    gap: 2px;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+}
+
+.numBtn{
+    width: 100%;
+}
+
+.numBtnNine{
+    height: 33%;
+    margin: 2px;
+}
+
+.operators{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.operatorBtn {
+    height: 10%;
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.equalsBtn{
+    height: 14%;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clearBtn {
+    height: 10%;
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
